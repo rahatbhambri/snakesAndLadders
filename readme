@@ -1,0 +1,22 @@
+Welcome to snakes and ladders game!
+
+How to play?
+
+Execute one of the following commands in CLI 
+    a) Without override i.e. by passing 0 as command line parameter. This will default all board parameters as specified in conf.json. ["python sandl.py 0"]
+        1) Enter number of test cases 
+        2) Enter snake configurations according to number of snakes specified in json file
+        3) Enter ladder configurations according to number of ladders specified in json file
+        4) Enter player names 
+        5) Enter if you want special objects (crocodile/ Mines)
+        6) Enjoy!
+    
+    b) By overriding the json file and manully specifying the board parameters and dice rolls for each turn 
+    ["python sandl.py 1"]
+        1) Enter number of test cases
+        2) Enter all board configurations(snakes, ladders, players) manually as asked on terminal
+        3) Enter if you want special objects (crocodile/ Mines)
+        4) Enter all the dice rolls for each player manually 
+        5) Enjoy!
+
+

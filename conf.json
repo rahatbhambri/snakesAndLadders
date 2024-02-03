@@ -1,0 +1,8 @@
+{
+    "number_of_players": 2,
+    "board_size": 10,
+    "number_of_snakes": 9,
+    "number_of_ladders": 8,
+    "number_of_dice": 1, 
+    "dice_strategy" : "MIN"
+}

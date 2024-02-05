@@ -96,7 +96,7 @@ class SnakeAndLadderGame:
 
             if n_pos >= self.win_pos:
                 print(f"{player.name} -> winner")
-                return True
+                return False
             else:
                 if n_pos in self.snake_map:
                     if self.snake_map[n_pos] != -1:
@@ -114,11 +114,11 @@ class SnakeAndLadderGame:
                     player.set_pos(self.ladder_map[n_pos])
                     if player.get_pos() == self.win_pos:
                         print(f"{player.name} -> winner")
-                        return True
+                        return False
                 else:
                     player.set_pos(n_pos)
 
-        return False
+        return True
 
 
     def start(self):
@@ -129,10 +129,9 @@ class SnakeAndLadderGame:
 
             player = self.players.get()
 
-            if not self.move(player):
+            if self.move(player):
                 self.players.put(player)
             else:
-                #print(f"{player} -> winner")
                 return
             
 def main():
